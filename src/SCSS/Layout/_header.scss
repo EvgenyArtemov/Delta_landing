@@ -1,0 +1,49 @@
+header {
+    margin: 0 auto;
+
+    img {
+        width: 166px;
+        height: 56px;
+    }
+    
+    .menu__list {
+        display: flex;
+        list-style: none;
+
+        &--item {
+            padding: 0 3rem 0 0;
+            @include font-norm;
+            color: $text-gray;
+        }
+    }
+
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+
+        &__phone {
+            @include font-norm;
+            color: $text-black;
+            font-weight: 700;
+        }
+
+        &__address {
+            font-family: "Nunito";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1.3rem;
+            color: $text-gray;
+        }
+    }
+
+    .schedule {
+        @include font-norm;
+        color: $text-white;
+        background-color: $main-blue;
+        padding: 1.8rem 3rem;
+        border-radius: 5px;
+        border-style: none;
+    }
+}

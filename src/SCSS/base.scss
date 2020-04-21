@@ -1,3 +1,61 @@
+@mixin font-norm {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+}
+
+@mixin font-h1--main {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 7.2rem;
+    line-height: 87%;
+    letter-spacing: 0.02em;
+}
+
+@mixin font-h2--main {
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+}
+
+$text-gray: #666666;
+$text-black: #000000;
+$text-white: #ffffff;
+
+$main-blue: #0545BA;
+
+:root,
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
 .wrapper {
-  background: red;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 1rem;
 }

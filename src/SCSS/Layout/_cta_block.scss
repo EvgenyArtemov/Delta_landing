@@ -1,0 +1,38 @@
+.cta__block {
+    background-image: url(../img/main_image.jpg);
+    height: 750px;
+    width: 100%;
+    max-width: 1920px;
+    max-height: 750px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    // background-size: cover;
+
+    &--header {
+        display: flex;
+        flex-direction: column;
+
+        & > h1 {
+            @include font-h1--main;
+            margin-top: 16rem;
+        }
+
+        & > h2 {
+            @include font-h2--main;
+            margin-top: 3rem;
+        }
+
+        & > .schedule__visit {
+            @include font-norm;
+            margin-top: 5rem;
+            color: $text-white;
+            background-color: $main-blue;
+            max-width: 20.3rem;
+            max-height: 5rem;
+            height: 50px;
+            border-style: none;
+            border-radius: 5px;
+        }
+    }
+}

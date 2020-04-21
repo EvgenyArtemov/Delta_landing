@@ -1,4 +1,4 @@
-import '../src/SCSS/base.scss';
+import '../src/SCSS/main.scss';
 
 console.log('hello');
 console.log('hello2');
