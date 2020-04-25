@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700,900&display=swap" rel="stylesheet">
     <title>Дельта - клиника профессиональной стоматологии</title>
 </head>
 <body>
@@ -32,7 +32,7 @@
     </header>
 
     <main>
-        <div class="cta__block">
+        <section class="cta__block">
             <div class="wrapper">
                 <div class="cta__block--header">
                     <h1>Терапия и <br> диагностика</h1>
@@ -99,7 +99,72 @@
                 </div>
                 
             </div>
-        </div>
+        </section>
+
+        <section class="services__block">
+            <div class="wrapper">
+                <section class="services__block--cure">
+                    <h2 class="main__header">Лечение кариеса</h2>
+                    <p class="cure__info">
+                        Каждый зуб мы лечим по мировым стандартам под микроскопом. 
+                        Все наши терапевты - специалисты по лечению "микро". 
+                        Сложная оптика позволяет врачу провести лечение предельно точно: удалить 
+                        только поврежденные ткани, пролечить сложные каналы, идеально восстановить форму зуба.
+                    </p>
+                    <h4>Из чего складывается стоимость лечения кариеса?</h4>
+                    <p class="cure__price">
+                        Индивидуальный набор - 250 р.
+                        <br>
+                        Анестезия - 500 - 800 р.
+                        <br>
+                        Препарирование кариозной полости с использованием кариес-теста - 500 - 650 р.
+                        <br>
+                        Пломба - 5 850 - 7 450 р.
+                        <br>
+                        Шлифовка, полировка пломбы - 960 р.
+                    </p>
+                    <div class="attention">
+                        <img src="../src/img/tooth_circle.jpg" alt="tooth attention">
+                        <div>
+                            <h4>Обратите внимание!</h4>
+                            <p>
+                                Если запустить кариес и своевременно не обратиться за помощью к врачу, то в будущем это может привести к осложнениям и проблемам
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <aside class="services__block--callback">
+                    <div class="callback">
+                        <div class="callback__header">
+                            <h2>Цена от 2 990 рублей</h2>
+                            <span>Предварительная стоимость</span>
+                        </div>
+                        <form class="callback__form">
+                            <h2>Закажите обратный звонок</h2>
+                            <span>Запись по телефону +7 (8152) 707-600</span>
+                            <div class="form__fields">
+                                <div class="field">
+                                    <label for="name">Ваше имя</label>
+                                    <input type="text" id="name" placeholder="Иван">
+                                </div>
+                                <div class="field">
+                                    <label for="surname">Ваша фамилия</label>
+                                    <input type="text" id="surname" placeholder="Иванов">
+                                </div>
+                                <div class="field">
+                                    <label for="phone">Ваш номер</label>
+                                    <input type="text" id="phone" placeholder="+7 800 555 35 35">
+                                </div>
+                                <div class="field">
+                                    <label for="comment">Комментарий</label>
+                                    <input type="text" id="comment" placeholder="">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </aside>
+            </div>
+        </section>
     </main>
 </body>
 </html>

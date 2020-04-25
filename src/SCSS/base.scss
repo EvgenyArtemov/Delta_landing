@@ -1,24 +1,37 @@
+@mixin font--family {
+    font-family: "Rubik";
+}
+
 @mixin font-norm {
-    font-family: "Nunito";
+    @include font--family;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.6rem;
     line-height: 1.6rem;
 }
 
 @mixin font-h1--main {
-    font-family: "Nunito";
+    @include font--family;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 7.2rem;
     line-height: 87%;
     letter-spacing: 0.02em;
 }
 
-@mixin font-h2--main {
-    font-family: "Nunito";
+@mixin font-h1--secondary {
+    @include font--family;
     font-style: normal;
     font-weight: 500;
+    font-size: 6.4rem;
+    line-height: 87%;
+    letter-spacing: 0.02em;
+}
+
+@mixin font-h2--main {
+    @include font--family;
+    font-style: normal;
+    font-weight: 400;
     font-size: 24px;
     line-height: 24px;
     letter-spacing: 0.02em;
