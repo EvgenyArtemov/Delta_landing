@@ -1,0 +1,78 @@
+.stages {
+    background-image: url(../img/radial__tooth1.png), url(../img/radial__tooth2.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right top, left center;
+
+    &__steps {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        .steps__left:first-of-type {
+            margin-top: 6rem;
+        }
+
+        & > .steps__left:nth-of-type(odd) {
+            margin-left: 7rem;
+        }
+
+        & > .stages__tooth1 {
+            position: absolute;
+            top: -14rem;
+            right: -40rem;
+        }
+
+        & > h1 {
+            @include font-h1--secondary;
+            margin-top: 11rem;
+            align-self: center;
+        }
+
+        & > p {
+            @include font-norm;
+            line-height: 140%;
+            font-size: 1.8rem;
+            color: $text-gray;
+            font-weight: 400;
+            margin-top: 3rem;
+            align-self: center;
+            max-width: 53rem;
+        }
+
+        .steps__left {
+            display: flex;
+            justify-content: start;
+            align-items: flex-start;
+        }
+
+        .steps__right {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+        }
+
+        .step {
+            padding: 3rem;
+            border: 2px solid $main-blue;
+            border-radius: 5px;
+            max-width: 36rem;
+            margin: 7rem 2rem;
+            width: 100%;
+
+            & > h2 {
+                @include font-h2--main;
+                font-size: 2.6rem;
+                font-weight: 500;
+                color: $main-blue;
+                margin-bottom: 2.5rem;
+            }
+
+            & > p {
+                @include font-norm;
+                font-size: 1.6rem;
+                font-weight: 400;
+                line-height: 1.8rem;
+            }
+        }
+    }
+}

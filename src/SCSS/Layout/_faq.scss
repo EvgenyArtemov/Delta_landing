@@ -5,7 +5,6 @@
 
 .faq {
     background-color: #F9F9F9;
-    height: 65rem;
 }
 
 .carousel {
@@ -14,28 +13,60 @@
 }
 
 .faq__block {
-    padding: 1rem 4rem 1rem 16rem;
+    padding: 1rem 4rem 3rem 20rem;
     background-color: white;
     border-radius: 5px;
+    box-shadow: 0px 4px 32px rgba(15, 27, 97, 0.06);
     min-width: 95rem;
     width: 100%;
     margin: 8rem 0 8rem -13rem;
-    height: 480px;
+    // height: 480px;
+
     & > h2 {
+        font-family: "Rubik";
+        margin-top: 5rem;
         margin-bottom: 2.3rem;
         font-size: 3.4rem;
         font-weight: 700;
     }
+    
     &--questions {
+
+        .questions__item {
+            margin-top: 1.5rem;
+            cursor: pointer;
+        }
         .question {
             @include font-norm;
+            display: flex;
+            justify-content: start;
+            align-items: center;
             padding: 1.8rem;
             border-radius: 5px;
+            color: $main-blue;
+            background-color: white;
+            border: 2px solid $main-blue;
+        }
+
+        .triangle--active {
+            fill: white;
+            transform: rotate(90deg);
+            margin-right: 1rem;
+        }
+
+        .triangle--dis {
+            fill: $main-blue;
+            transform: rotate(-90deg);
+            margin-right: 1rem;
+        }
+
+        .question.active {
             color: white;
-            background-color: #0545BA;
+            background-color: $main-blue;
         }
 
         .answer {
+            display: none;
             font-family: "Rubik";
             font-size: 1.4rem;
             font-weight: 400;
@@ -43,6 +74,10 @@
             background-color: #fff;
             color: black;
             box-shadow: 0px 4px 32px rgba(15, 27, 97, 0.06);
+        }
+
+        .answer.open {
+            display: block;
         }
     }
 }
